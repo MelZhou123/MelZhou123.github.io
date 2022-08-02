@@ -1,0 +1,61 @@
+* {
+    margin:0;
+    padding: 0;
+}
+
+@font-face{
+    font-family:spaceMono;
+    src:url(fonts/SpaceMono-Regular.ttf);
+}
+
+body {
+    background-color:#ffccff;
+    opacity: 0.6
+    font-family: "spaceMono","Courier New", sans-serif;
+}
+
+nav {
+    margin: auto;
+}
+
+pre {
+    
+    font-family: spaceMono;
+
+}
+
+
+p {
+    font-size: 1em;
+    text-align: left;
+    padding-top: 3px;
+    letter-spacing: 2px;
+    text-indent: 10px;
+
+}
+
+h1 {
+    color: white
+}
+
+h3{
+    color:lightskyblue
+}
+
+
+p {
+    color: #9999ff
+}
+
+
+h1 {
+    line-height: 1.8
+}
+
+h2 {
+    line-height: 1.8
+}
+
+h3 {
+    line-height: 2.9
+}
