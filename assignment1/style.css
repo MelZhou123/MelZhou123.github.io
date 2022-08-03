@@ -1,0 +1,85 @@
+* {
+    margin:0;
+    padding: 0;
+}
+
+@font-face{
+    font-family:spaceMono;
+    src:url(fonts/SpaceMono-Regular.ttf);
+}
+
+body {
+    background-color:#ffccff;
+    opacity: 0.6
+    font-family: "spaceMono","Courier New", sans-serif;
+}
+
+nav {
+    margin: auto;
+}
+
+pre {
+    
+    font-family: spaceMono;
+
+}
+
+
+p {
+    font-size: 1em;
+    text-align: left;
+    padding-top: 3px;
+    letter-spacing: 2px;
+    text-indent: 10px;
+    padding-left:40px
+
+}
+
+h1 {
+    color: white
+}
+
+h3{
+    color:lightskyblue
+}
+
+
+p {
+    color: #9999ff
+}
+
+
+h1 {
+    line-height: 1.8
+    padding-top: 50px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+}
+
+h2 {
+    line-height: 1.8
+    padding-top: 50px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+  
+}
+
+}
+
+h3 {
+    line-height: 2.9
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 40px;
+    margin-left: 60px;
+}
+
+title {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
