@@ -1,0 +1,99 @@
+style.css
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+
+}
+
+:root{
+    --colour-one: skyblue;
+    --colour-two: pink;
+    --colour-three: pink;
+    --colour-four: skyblue; 
+    --border-one: dashed 2px white
+}
+
+/* This is the main grid,I broke it into 1/3s for the columns and the rows. I chose the chosen image because I felt like it was my type of style-Japanese manga style */
+
+#grid-container-bg {
+
+    background-color: var(--colour-one);
+    width: 60vw; 
+    height: 90vh;
+    /* width: 71vw;
+    height:100vh; */
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 30px;
+    grid-template-rows: 40px;
+} 
+
+
+.grid-item-one{
+    border: var(--border-one)
+}
+
+
+
+#box-one{
+    grid-row: 1/4;
+    grid-column: 1/2;
+
+}
+
+#box-two{
+    grid-row: 1/2;
+    grid-column:1;
+    background-color:var(--colour-three);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-image: linear-gradient(to right,var(--colour-one), var(---colour-four);
+}
+
+#box-three {
+    grid-row:1/2;
+    grid-column:1/2;
+}
+
+#box-four {
+    grid-row: 1/8;
+    grid-column:2;
+}
+
+#box-five {
+    grid-row: 1;
+    grid-column: 3;
+}
+
+#box-six {
+    grid-row: 1/10;
+    grid-column:2;
+}
+
+#box-seven {
+    grid-row: 3;
+    grid-column: 3/4;
+}
+
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    column-gap: 20px;
+    row-gap: 1em;
+    gap: 1em 20px
+ }
+
+ .container {
+    display: grid; 
+    grid-template-columns: 0.75fr 2fr 1fr; 
+    grid-template-rows: 0.75fr 0.5fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      ". . ."
+      ". . ."
+      ". . ."; 
+  }
