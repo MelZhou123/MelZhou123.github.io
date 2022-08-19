@@ -11,45 +11,49 @@ style.css
     --colour-two: pink;
     --colour-three: pink;
     --colour-four: skyblue; 
-    --border-one: dashed 2px white
+    --border-one: dashed 2fr white
 }
 
-/* This is the main grid,I broke it into 1/3s for the columns and the rows. I chose the chosen image because I felt like it was my type of style-Japanese manga style */
 
-#grid-container-bg {
+/* I chose the chosen image because I felt like it was my type of style-Japanese manga style */
 
-    background-color: var(--colour-one);
-    width: 60vw; 
-    height: 90vh;
-    /* width: 71vw;
-    height:100vh; */
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 30px;
-    grid-template-rows: 40px;
-} 
+/* I also felt like the CSS border style of solid was most appealing to me because it is a neat and clean aesthetic.*/
+
+/* I selected the pastel colors of pink and blue because they emulate the qualities of delicate, feminine and clean which is what I would describe my artistic style to be.*/
 
 
-.grid-item-one{
-    border: var(--border-one)
-}
+ 
+
+ div {
+    border: 0.5rem outset skyblue;
+    border-radius: 12%;
+    font: 1rem sans-serif;
+    margin: 2rem;
+    padding: 1rem;
+    outline-offset: 0.5rem;
+
+ }
 
 
 
 #box-one{
     grid-row: 1/4;
     grid-column: 1/2;
-
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    display: grid;
+    grid-template-columns: (3fr,1fr);
 }
 
 #box-two{
     grid-row: 1/2;
     grid-column:1;
-    background-color:var(--colour-three);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    background-image: linear-gradient(to right,var(--colour-one), var(---colour-four);
+    grid-column-start: 1;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    
 }
 
 #box-three {
@@ -77,23 +81,6 @@ style.css
     grid-column: 3/4;
 }
 
+  
 
-.wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 100px);
-    column-gap: 20px;
-    row-gap: 1em;
-    gap: 1em 20px
- }
-
- .container {
-    display: grid; 
-    grid-template-columns: 0.75fr 2fr 1fr; 
-    grid-template-rows: 0.75fr 0.5fr 1fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-      ". . ."
-      ". . ."
-      ". . ."; 
-  }
+  /* I made sure to use % or fr for my css grid measurements to ensure there were less errors in the overall structure of the squares in my grid that is replicating the intended image (Akira Vol 1-page 167) */
