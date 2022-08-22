@@ -1,0 +1,117 @@
+style.css
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+
+}
+
+/* I chose the chosen image because I felt like it was my type of style-Japanese manga style. */
+
+:root{
+    --colour-one: skyblue;
+    --colour-two: pink;
+    --colour-three: pink;
+    --colour-four: skyblue; 
+    --border-one: dashed 2fr white
+}
+
+/* I utilised CSS code to provide a colour scheme for the overall exercise. */
+
+/* I also felt like the CSS border style of solid was most appealing to me because it is a neat and clean aesthetic which mirrors Japanese manga scene borders.*/
+
+/* I selected the pastel colors of pink and blue because they emulate the qualities of delicate, feminine and clean which is what I would describe my artistic style to be.*/
+
+
+ div {
+    border: 0.5rem outset pink;
+    border-radius: 12%;
+    font: 1rem sans-serif;
+    margin: 2rem;
+    padding: 1rem;
+    outline-offset: 0.5rem;
+    background-color: skyblue;
+ }
+ 
+
+/* This set of code allows for me to determine the size of the borders, the colour of the borders as well as the exact measurements for any margins or padding included within the coding exercise. */
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 200fr 200fr 200fr
+ }
+
+
+ .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-auto-rows: 200fr 100fr 100fr; 
+}
+
+/* The wrapper code allowed for me to determine the necessary grid column measurements width and length as well as the rows. */
+
+.box1 {
+    grid-column-start: 1;
+    grid-column-end:2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+    
+
+.box2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.box3{
+    grid-column-start:1;
+    grid-column-end:3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.box4{
+    grid-column-start: 1;
+    grid-column-end: 1.75;
+    grid-row-start:1;
+    grid-row-end: 3;
+}
+
+.box5{
+    grid-column-start: 1;
+    grid-column-end:3;
+    grid-row-start: 1;
+    grid-column-end: 3;
+}
+
+.box6{
+    grid-column-start: 1;
+    grid-column-end: 0.5;
+    grid-row-start: 1;
+    grid-row-end:3;
+}
+
+.box7{
+    grid-column-start:1;
+    grid-row-end: 4;
+    grid-row-start:1;
+    grid-row-end: 3;
+}
+
+/* The grid column/row start and end code allowed for me to determine the necessary grid measurements for each of the seven boxes as shown in the reference image.*/
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-auto-rows: 200fr 100fr 100fr;
+}
+
+
+  /* I made sure to use fr for my css grid measurements to ensure there were less errors in the overall structure of the squares in my grid that is replicating the intended image (Akira Vol 1-page 167). */
