@@ -1,0 +1,135 @@
+*{
+  box-sizing: border-box;
+  background-origin: border-box;
+  margin: 0;
+}
+
+:root{
+  /* first two colours come from Kuroi's Manga Pallete Palette */
+  /* https://lospec.com/palette-list/manga-pallete */
+  --col-01:#171219;
+  --col-02:#f2fbeb;
+  --col-03:#5252ff;
+  --col-04:#b6e878;
+  font-size: 16px;
+}
+
+body{
+  padding: 1rem;
+  background-color: var(--col-02);
+  color: var(--col-01);
+  transition: color ease-in 1s;
+}
+
+/* The transition coding in css allows for me to get a transition duration of one second which demonstrates knowlege of the code in how transition can be applied to a html file. */
+
+a {
+  transition: 4s;
+}
+a:hover {
+  color:pink;
+
+}
+
+/* The hover and color coding in css allows for you to hover over buttons in the contents section of the webpage, while changing the color of the font to a light blush pink.  */
+
+
+section{
+  margin-bottom: 2rem;
+}
+
+h1{
+  font-size: 3rem;
+}
+
+h2{
+  font-size: 2rem;
+}
+
+p{
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+figcaption{
+  width: fit-content;
+  width:initial;
+}
+
+dl ul{
+  margin-bottom: 0;
+}
+
+li{
+  font-size: 1rem;
+}
+
+dd{
+  padding-left: 60px;
+}
+
+li ul{
+  padding-left: 40px;
+}
+
+.img-wrapper{
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.nav-link{
+  color:pink;
+}
+
+.nav-link:active{
+  color:#5252ff
+
+}
+
+/* The nav link and nav link active coding allows for you to see more of a color change between the initial colour of pink of the contents buttons and the gradual change to a dark purple color. */
+
+.img-figure{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.article-img{
+  width: 80%;
+}
+
+.res-columns{
+  column-width: 25rem;
+}
+
+/* medium devices 600 - 992 */
+@media only screen and (min-width: 600px) {
+  :root{
+    font-size: 20px;
+  }
+  
+  .img-wrapper{
+    width: 75%;
+    margin: 1.5rem auto;
+  }
+}
+
+/* medium devices 992 + */
+@media only screen and (min-width: 992px) {
+  :root{
+    font-size: 24px;
+  }
+
+  .img-wrapper{
+    max-width: fit-content;
+    float: right;
+    margin: 1.5rem;
+  }
+}
+@media (prefers-reduced-motion) {
+  a:hover {
+    animation: none;
+  }
+}
+
+/* This @media piece of coding allows for both transitions and animations to test run the effects of it on a webpage, but mute the function of the animations without deleting it while keeping the transition effect intact. */
