@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+    background-origin: border-box;
+    margin: 0;
+}
+
+:root{
+    --col-01: rgba(232, 15, 15, 0.953);
+    --col-02: lightcoral;
+    --col-03: lightpink;
+}
+
+#colour-square{
+    width: 30vw;
+    height: 30vw;
+    background-color: #e90606;
+    position: absolute;
+}
+
+body {
+    background: #e90606; 
+}
+
+p {
+    color: black;
+}
+       
+p {
+   
+    font-family: "fairwater script";
+
+}
+
+.adjectives {
+    position: absolute;
+    left: 30%;
+    bottom:15%;
+    opacity: 0;
+    transition: 2s;
+}
+
+.button {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 270%;
+    height: 80%;
+    border: 0;
+    outline: none;
+    background: #e90606;
+}
+
+
+/* This is the code I utilised to position the text and create a coloured background for my website. */
