@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="script.js"></script>
+
+        <title>Metaphor as A Perfume Bottle</title>
+
+    </head>
+    <body>
+
+        <div class="img-lidcontain">
+            <img id="cap" src="images/perfume_lid.png">
+        </div>
+        
+        <div class="img-bottlecontain">
+            <img class="bottle" src="images/perfume_bottle.png">
+        </div>
+
+        <button onclick="fadeIn()"> Open </button>
+
+        <!-- This function links the function of opening the perfume bottle as well as the springing out of words of the bottle.  -->
+
+        <p id="descriptions" class="adjectives"> 
+
+            rosy 
+
+            pink pepper
+
+            turkish petals
+
+            raspberry blossom
+
+            papyrus
+
+            white amber
+
+        </p>
+
+    <!-- These are the words that are used to describe the perfume scents. -->
+
+        <style> 
+
+            .square {
+                margin: 100%;
+                width: 150%;
+                height: 150%;
+                background-color: red;
+                transform: rotate (45deg);  
+            }
+
+        </style>
+
+        <button onclick="fadeOut()" >Close</button>
+
+       <!-- This function links the function of closing the perfume bottle as well as the springing out of words of the bottle. --> 
+
+    </body>
+
+</html>
