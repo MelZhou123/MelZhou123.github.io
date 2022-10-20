@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="script.js"></script>
+        <title>Metaphor as A Perfume Bottle</title>
+
+    </head>
+
+    <body>
+        <div class="box">
+            <div class="bottle1">
+                <p id="descriptions1" class="adjectives"> 
+
+                    <span style="color:red">rosy</span>
+        
+                    <span style="color:pink">pink pepper</span>
+        
+                    <span style="color:magenta">turkish petals</span>
+        
+                    <span style="color:red">raspberry blossom</span>
+
+                    <span style="color:white">papyrus</span>
+
+                    <span style="color: whitesmoke">white amber</span>
+                </p>
+
+                <!-- The span tag wraps small sections of text for styling purposes, in this instance it is to give every adjective a different colour correspondent to the scent -->
+
+                <div class="img-lidcontain lidclose" onclick="openBottle('1', this)">
+                    <img id="cap" src="./images/perfume_lid.png">
+                </div>
+            
+                <div class="img-bottlecontain">
+                    <img class="bottle" src="./images/perfume_bottle.png">
+                </div>
+            </div>
+
+            <!-- The onclick function is an embedment of javascript to the functioning of the opening and closing of the perfume bottles prompted by a click-->
+
+            <div class="bottle2">
+                <p id="descriptions2" class="adjectives">
+                   <span style="color:red">raspberry </span> 
+        
+                   <span style="color:blue">blueberry</span> 
+        
+                   <span style="color:red">strawberry</span> 
+
+                   <span style="color:pink">tulips</span>
+                </p>
+                <div class="img-lidcontain2 lidclose" onclick="openBottle('2', this)">
+                    <img id="cap" src="./images/perfume lid 2.png">
+                </div>
+
+                <div class="img-bottlecontain2">
+                    <img id="bottle" src="./images/perfume_bottle_2.png">
+                </div>
+            </div>
+            <div class="bottle3">
+                <p id="descriptions3" class="adjectives">
+                    
+                 <span style="color:orange">peaches</span> 
+        
+                 <span style="color:purple">plums</span>  
+                </p>
+                <div class="img-lidcontain3 lidclose"  onclick="openBottle('3', this)">
+                    <img id="cap" src="./images/perfume lid 2.png">
+                </div>
+
+                <div class="img-bottlecontain3">
+                    <img id="bottle" src="./images/perfume bottle 3.png">
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <img class="shelf" src="./images/shelf.png">
+        </div>
+        
+
+    </body>
+</html>

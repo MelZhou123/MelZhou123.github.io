@@ -1,0 +1,167 @@
+*{
+    box-sizing: border-box;
+    background-origin: border-box;
+    margin: 0;
+}
+
+:root{
+    --col-01: rgb(232, 15, 15);
+    --col-02: lightcoral;
+    --col-03: lightpink;
+}
+@font-face {
+    src: url("./nature-beauty-font/NatureBeautyPersonalUse-9Y2DK.ttf");
+    font-family: nature-beauty;
+}
+
+/* Chose nature beauty font because it is cursive and elegant, fitting to the elegance of a perfume bottle. */
+
+body {
+    background-image: linear-gradient(skyblue,pink);
+    overflow: hidden;
+}
+
+/* Changed the background gradient because I felt like it lined up with the cool toned colour scheme of the majority of the perfume bottles. */
+
+p {
+    color: black;
+    font-family:nature-beauty;
+    padding-bottom: 50px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.adjectives {
+    opacity: 0;
+    transition: 2s;
+}
+
+.box{
+    display:grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    height: 90vh;
+}
+.bottom{
+    height: 10%;
+    width: 100vw;
+}
+.shelf{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.bottle1{
+    width:250px;
+    height:300px;
+    margin:auto;
+    margin-top:44%;
+}
+
+.img-lidcontain{
+    width: 133px;
+    height: 81px;
+    margin-top: 5%;
+    margin-left:60px;
+    transition-duration: 1s;
+}
+
+/* Transition duration determines how long the lid lift will be.*/
+
+.img-bottlecontain{
+    width:217px;
+    height:171px;
+    margin: auto;
+}
+.img-lidcontain:hover{
+    cursor:pointer;
+}
+
+/* Added a cursor because I felt like it would make the user more aware of the function of the site, and that is to click on the perfume lids. */
+
+.bottle2{
+    width:250px;
+    height:300px;
+    margin:auto;
+    margin-top:55%;
+}
+
+.img-bottlecontain2{
+    width:217px;
+    height:171px;
+    margin:auto;
+    margin-top: 0%;
+}
+.img-lidcontain2{
+    width: 133px;
+    height: 81px;
+    margin-top: 5%;
+    margin-left:55px;
+    transition-duration: 1s;
+}
+.img-lidcontain2:hover{
+    cursor:pointer;
+}
+
+.bottle3{
+    width:250px;
+    height:300px;
+    margin:auto;
+    margin-top:55%;
+}
+
+.img-lidcontain3{
+    width: 133px;
+    height: 81px;
+    margin-top: 5%;
+    margin-left: 65px;
+    transition-duration: 1s;
+
+}
+.img-lidcontain3:hover{
+    cursor:pointer;
+}
+
+.img-bottlecontain3{
+    width:217px;
+    height:171px;
+    margin-left: 25px;
+}
+
+
+
+.lidopen {
+    /* animation: fadeOut 1s;
+    -webkit-animation: fadeOut 1s;
+    -moz-animation: fadeOut 1s;
+    -o-animation: fadeOut 1s;
+    -ms-animation: fadeOut 1s;
+    animation-fill-mode: forwards; */
+    transform:rotate(90deg);
+    transform-origin: bottom right;
+}
+  
+.lidclose {
+    /* animation: fadeOut 1s reverse;
+    -webkit-animation: fadeOut 1s reverse ;
+    -moz-animation: fadeOut 1s reverse;
+    -o-animation: fadeOut 1s reverse;
+    -ms-animation: fadeOut 1s reverse;
+    animation-fill-mode: forwards;  */
+    transform:rotate(0deg);
+    transform-origin: bottom right;
+}
+
+/* @keyframes fadeOut {
+    from { transform: rotate(0deg) translateY(0%) }
+  
+    to { transform: rotate(90deg) translateY(-20%) }
+} */
+
+/* This is the animation and transformation for the bottle lids of the perfumes to come off and on.*/
+
+
